@@ -31,6 +31,7 @@ function About() {
     </div>
   </div>
   <div className="accordion-item">
+    
     <h2 className="accordion-header" id="headingTwo">
       <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         Accordion Item #2
