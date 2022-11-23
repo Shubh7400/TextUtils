@@ -30,17 +30,18 @@ const TextInputs = (props) => {
      
  }
   return (
-<>
-        <div className='container my-3 text-white'>
+<>        <h2 className='here3' >TEXTUTILS</h2>
+          <div className='myclass'>
+        <div className='container text-white'>
           <div className='first'>
-         <h1>{props.heading}</h1>
+         <h1 className='text'>{props.heading}</h1>
          <div className="mb-3">
            <textarea className="form-control"   onChange={(event) => setText(event.target.value) }   id="myBox" rows="8"></textarea>
          </div></div>
          <div className='second'>
          <button className='btn btn-success me-3' onClick={handleUpClick}>Convert to UpperCase</button>
          <button className="btn btn-success me-3" onClick={handleLoClick}>Convert to Lowercase</button>
-         <button className="btn btn-success" onClick={removeAll}>Remove all</button>
+         <button className="btn btn-danger" onClick={removeAll}>Remove all</button>
          </div>
        </div>
 
@@ -50,12 +51,13 @@ const TextInputs = (props) => {
      </div></div>
        <div className="container my-3">
        <div className='four'>
-        <h1>Your Text summary</h1>
+        <h1 className='here1'>Your Text summary</h1>
         <b>{text.split(" ").length} Words And {text.length} Characters</b><br/>
         <b>{0.008* text.split(" ").length} Minutes Read</b>
-        <h2>Preview</h2>
+        <h2 className='here'>Preview</h2>
         <b>{edit}</b>
         </div>
+       </div>
        </div>
   </>     
       

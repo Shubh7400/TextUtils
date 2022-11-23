@@ -12,6 +12,13 @@ function About() {
                 backgroundColor:"black"
             })
         }
+ 
+    }
+    const Delete=()=>{
+      setmyStyle({
+        color:"black",
+        backgroundColor:"white"
+    })
     }
   return (
     <div classNameName='container' style={myStyle} >
@@ -57,7 +64,9 @@ function About() {
   </div>
 </div>
 <div classNameName='container my-3'>
-<button type="button" onClick={toggleStyle} className="btn btn-primary">Enable Dark Mode</button>    
+<button type="button" onClick={toggleStyle} className="btn btn-success me-2">Enable Dark Mode</button>
+<button type="button" onClick={Delete} className="btn btn-danger">Disable Dark Mode</button>
+
 </div>
 </div>
   )
