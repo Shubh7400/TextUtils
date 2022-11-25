@@ -2,27 +2,27 @@ import React, { useState } from 'react'
 
 function About() {
     const[myStyle,setmyStyle]=useState({
-        color:"black",
-        backgroundColor:"white"
+        color:"white",
+        backgroundColor:"black"
     })
    const toggleStyle=()=>{
-        if(myStyle.color=="black"){
+        if(myStyle.color=="white"){
             setmyStyle({
-                color:"white",
-                backgroundColor:"black"
+                color:"black",
+                backgroundColor:"white"
             })
         }
  
     }
     const Delete=()=>{
       setmyStyle({
-        color:"black",
-        backgroundColor:"white"
+        color:"white",
+        backgroundColor:"black"
     })
     }
   return (
     <div classNameName='container' style={myStyle} >
-  <h1 classNameName="my-3">About us</h1>
+  <h1 className=" text-center">About us</h1>
 <div className="accordion" id="accordionExample" style={myStyle}>
   <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">
@@ -30,7 +30,7 @@ function About() {
         Accordion Item #1
       </button>
     </h2>
-    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseOne" className="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div className="accordion-body">
         <strong>This is the first item's accordion body.</strong> 
         It is shown by default, until the collapse plugin adds the appropriate classNamees that we use to style each element. These classNamees control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
@@ -63,9 +63,9 @@ function About() {
     </div>
   </div>
 </div>
-<div classNameName='container my-3'>
-<button type="button" onClick={toggleStyle} className="btn btn-success me-2">Enable Dark Mode</button>
-<button type="button" onClick={Delete} className="btn btn-danger">Disable Dark Mode</button>
+<div classNameName='container '>
+<button type="button" onClick={toggleStyle} className="btn btn-danger me-2 my-3">DISABLE DARK MODE</button>
+<button type="button" onClick={Delete} className="btn btn-success">ENABLE DARK MODE</button>
 
 </div>
 </div>
